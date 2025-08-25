@@ -1,0 +1,27 @@
+<Window x:Class="WebHostWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        Title="Polygent" Height="800" Width="1200"
+        WindowState="Maximized"
+        Icon="Assets/icon.png">
+    
+    <Grid>
+        <!-- Loading Overlay -->
+        <Border x:Name="LoadingOverlay" Background="#101828" Visibility="Visible">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">                
+                <!-- Loading Text -->
+                <TextBlock x:Name="LoadingText" 
+                           Text="Initializing Polygent..." 
+                           Foreground="White" 
+                           FontSize="16" 
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+        
+        <!-- WebView2 Control -->
+        <wv2:WebView2 x:Name="WebViewControl" 
+                      Visibility="Collapsed"
+                      NavigationCompleted="WebView_NavigationCompleted"/>
+    </Grid>
+</Window>

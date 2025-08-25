@@ -1,0 +1,35 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:webview="clr-namespace:WebViewControl;assembly=WebViewControl.Avalonia"
+        x:Class="WebHost.MainWindow"
+        Title="Polygent"
+        Icon="/Assets/icon.png"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen">
+  
+  <Grid>
+    <!-- WebView (hidden initially) -->
+    <webview:WebView Name="WebViewControl" 
+                     IsVisible="False" 
+                     Focusable="True"/>
+    
+    <!-- Loading Overlay -->
+    <Border Name="LoadingOverlay" 
+            Background="#101828" 
+            IsVisible="True">
+      <StackPanel VerticalAlignment="Center" 
+                  HorizontalAlignment="Center" 
+                  Spacing="30">        
+        <!-- Loading Animation -->
+        <StackPanel Spacing="20">          
+          <!-- Status Text -->
+          <TextBlock Name="LoadingText" 
+                     Text="Starting Polygent services..." 
+                     FontSize="16" 
+                     Foreground="White" 
+                     HorizontalAlignment="Center"/>
+        </StackPanel>
+      </StackPanel>
+    </Border>
+  </Grid>
+</Window>

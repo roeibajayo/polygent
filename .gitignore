@@ -1,0 +1,80 @@
+# Build and Release Folders
+[Oo]bj/
+[Bb]in/
+.vs/
+**.user
+/Properties/PublishProfiles/
+/installer/*-cache/
+
+# Configuration files with sensitive data
+appsettings.*.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.Local.json
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.development
+.env.*.local
+
+# Log files
+logs/
+*.log
+log*.txt
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Audio files
+speech_*.mp3
+*.mp3
+
+# Temporary directories
+/pr-trees/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+## Docs files
+.claude/
+.gemini/
+docs/
+CLAUDE.md

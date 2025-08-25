@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.9.1" version="22.9.1" Modules="simple" RootPath="." Language="en" Id="{6FF67F7F-B5AB-4AF7-9D09-F5A5D84173EF}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_APP_FILE" Value="[#Polygent.exe]"/>
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPPRODUCTICON" Value="icon.exe" Type="8"/>
+    <ROW Property="ARPURLUPDATEINFO" Value="https://github.com/roeibajayo/polygent"/>
+    <ROW Property="CTRLS" Value="2"/>
+    <ROW Property="MSIFASTINSTALL" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="Manufacturer" Value="roeibajayo"/>
+    <ROW Property="ProductCode" Value="1033:{77F66929-2891-4A93-A788-1D094C4769D2} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Polygent"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Options="32"/>
+    <ROW Property="REBOOT" MultiBuildValue="DefaultBuild:ReallySuppress"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{A04895CC-EB45-4F8C-8760-646381C169B4}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="StartMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="STARTM~1|StartMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="assets_Dir" Directory_Parent="wwwroot_Dir" DefaultDir="assets" DirectoryOptions="3"/>
+    <ROW Directory="browserwasm_Dir" Directory_Parent="runtimes_Dir" DefaultDir="BROWSE~1|browser-wasm" DirectoryOptions="3"/>
+    <ROW Directory="linuxarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~2|linux-arm64" DirectoryOptions="3"/>
+    <ROW Directory="linuxarm_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~1|linux-arm" DirectoryOptions="3"/>
+    <ROW Directory="linuxarmel_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~3|linux-armel" DirectoryOptions="3"/>
+    <ROW Directory="linuxmips64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~4|linux-mips64" DirectoryOptions="3"/>
+    <ROW Directory="linuxmuslarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~6|linux-musl-arm64" DirectoryOptions="3"/>
+    <ROW Directory="linuxmuslarm_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~5|linux-musl-arm" DirectoryOptions="3"/>
+    <ROW Directory="linuxmusls390x_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~7|linux-musl-s390x" DirectoryOptions="3"/>
+    <ROW Directory="linuxmuslx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~8|linux-musl-x64" DirectoryOptions="3"/>
+    <ROW Directory="linuxppc64le_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX-~9|linux-ppc64le" DirectoryOptions="3"/>
+    <ROW Directory="linuxs390x_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX~10|linux-s390x" DirectoryOptions="3"/>
+    <ROW Directory="linuxx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX~11|linux-x64" DirectoryOptions="3"/>
+    <ROW Directory="linuxx86_Dir" Directory_Parent="runtimes_Dir" DefaultDir="LINUX~12|linux-x86" DirectoryOptions="3"/>
+    <ROW Directory="maccatalystarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="MACCAT~1|maccatalyst-arm64" DirectoryOptions="3"/>
+    <ROW Directory="maccatalystx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="MACCAT~2|maccatalyst-x64" DirectoryOptions="3"/>
+    <ROW Directory="native_10_Dir" Directory_Parent="linuxx64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_11_Dir" Directory_Parent="linuxx86_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_12_Dir" Directory_Parent="maccatalystarm64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_13_Dir" Directory_Parent="maccatalystx64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_14_Dir" Directory_Parent="osxarm64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_15_Dir" Directory_Parent="osxx64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_16_Dir" Directory_Parent="winarm_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_17_Dir" Directory_Parent="winarm64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_18_Dir" Directory_Parent="winx64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_19_Dir" Directory_Parent="winx86_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_1_Dir" Directory_Parent="linuxarm64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_2_Dir" Directory_Parent="linuxarmel_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_3_Dir" Directory_Parent="linuxmips64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_4_Dir" Directory_Parent="linuxmuslarm_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_5_Dir" Directory_Parent="linuxmuslarm64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_6_Dir" Directory_Parent="linuxmusls390x_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_7_Dir" Directory_Parent="linuxmuslx64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_8_Dir" Directory_Parent="linuxppc64le_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_9_Dir" Directory_Parent="linuxs390x_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_Dir" Directory_Parent="linuxarm_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="nativeassets_Dir" Directory_Parent="browserwasm_Dir" DefaultDir="NATIVE~1|nativeassets" DirectoryOptions="3"/>
+    <ROW Directory="net9.0_Dir" Directory_Parent="nativeassets_Dir" DefaultDir="net9.0" DirectoryOptions="3"/>
+    <ROW Directory="osxarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="OSX-AR~1|osx-arm64" DirectoryOptions="3"/>
+    <ROW Directory="osxx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="osx-x64" DirectoryOptions="3"/>
+    <ROW Directory="publish_Dir" Directory_Parent="APPDIR" DefaultDir="publish" DirectoryOptions="3"/>
+    <ROW Directory="runtimes_Dir" Directory_Parent="publish_Dir" DefaultDir="runtimes" DirectoryOptions="3"/>
+    <ROW Directory="winarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="WIN-AR~1|win-arm64" DirectoryOptions="3"/>
+    <ROW Directory="winarm_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-arm" DirectoryOptions="3"/>
+    <ROW Directory="winx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x64" DirectoryOptions="3"/>
+    <ROW Directory="winx86_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x86" DirectoryOptions="3"/>
+    <ROW Directory="wwwroot_Dir" Directory_Parent="publish_Dir" DefaultDir="wwwroot" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{52EA3E99-EB88-40C5-8488-FBD2556D1BA0}"/>
+    <ROW Component="ProductInformation" Value="{31E38A93-7DF2-47B9-BA75-384A6221E6E9}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{52EA3E99-EB88-40C5-8488-FBD2556D1BA0}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="CommunityToolkit.Mvvm.dll" ComponentId="{2756D07D-ED2D-43F1-BF9D-CFD9C31F9FB0}" Directory_="publish_Dir" Attributes="0" KeyPath="CommunityToolkit.Mvvm.dll"/>
+    <ROW Component="MediatorCore.dll" ComponentId="{1B38D5CC-647C-40FA-BC61-3B1D640FCDE9}" Directory_="publish_Dir" Attributes="0" KeyPath="MediatorCore.dll"/>
+    <ROW Component="MemoryCore.dll" ComponentId="{B2BA4D7D-1D20-427A-A83E-90A10AF670D0}" Directory_="publish_Dir" Attributes="0" KeyPath="MemoryCore.dll"/>
+    <ROW Component="Microsoft.Data.Sqlite.dll" ComponentId="{07D4B381-E7F1-428A-A8B6-F93B39760DBF}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Data.Sqlite.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.Abstractions.dll" ComponentId="{7A62D444-F7F4-4D5B-9664-813B874098D0}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.Abstractions.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.Relational.dll" ComponentId="{483C40A8-A09B-4D7A-83C8-75F7A515AD76}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.Relational.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.Sqlite.dll" ComponentId="{26F049E8-F46F-4385-8F75-B01299852053}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.Sqlite.dll"/>
+    <ROW Component="Microsoft.EntityFrameworkCore.dll" ComponentId="{4A9D56B5-44C6-4FFD-89F0-D526DC577F89}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.EntityFrameworkCore.dll"/>
+    <ROW Component="Microsoft.Extensions.Caching.Abstractions.dll" ComponentId="{B8DA4A13-5D02-40F6-BFC2-D5D6ED0DB819}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Caching.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Caching.Memory.dll" ComponentId="{747E232B-FDB2-4AF4-844C-7E0E0E2D4917}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Caching.Memory.dll"/>
+    <ROW Component="Microsoft.Extensions.Configuration.Abstractions.dll" ComponentId="{EAF4AB8B-919E-4BAE-A1C1-738008FB3FE9}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInj_1_ection.dll" ComponentId="{7E5ED167-EEC3-4568-8BCD-4566D98BEA8E}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyInjection.Abstractions.dll" ComponentId="{3D0A90A7-E65D-403A-87FF-73972372BD7E}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.DependencyModel.dll" ComponentId="{DBB7F9D8-FF91-4CEC-BB03-F6548B4B65ED}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.DependencyModel.dll"/>
+    <ROW Component="Microsoft.Extensions.FileSystemGlobbing.dll" ComponentId="{20DDC61C-6EAD-4E9D-9EE9-57E4FA7AB7A9}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.FileSystemGlobbing.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.Abstractions.dll" ComponentId="{10B1559F-169C-43C7-A7B4-F321774DA1A7}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Component="Microsoft.Extensions.Logging.dll" ComponentId="{AF6A590E-1E38-4790-ACF3-2F6A9957570F}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Logging.dll"/>
+    <ROW Component="Microsoft.Extensions.Options.dll" ComponentId="{FA679D79-3530-4271-84FB-E70F5BE02BD3}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Options.dll"/>
+    <ROW Component="Microsoft.Extensions.Primitives.dll" ComponentId="{840A3806-867A-47D8-8F8F-4AADB9309F55}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.Core.dll" ComponentId="{CC01839D-0653-4299-B383-F03CD655488A}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.Core.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.WinForms.dll" ComponentId="{99725D0F-0147-4887-A3F2-06CB053AD536}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.WinForms.dll"/>
+    <ROW Component="Microsoft.Web.WebView2.Wpf.dll" ComponentId="{066BC4B7-F290-422C-91FE-BC7A712462F8}" Directory_="publish_Dir" Attributes="0" KeyPath="Microsoft.Web.WebView2.Wpf.dll"/>
+    <ROW Component="NAudio.Asio.dll" ComponentId="{B887F209-9CEA-450F-B675-9C6EA7A9890C}" Directory_="publish_Dir" Attributes="0" KeyPath="NAudio.Asio.dll"/>
+    <ROW Component="NAudio.Core.dll" ComponentId="{C0A1FA36-DF37-4A62-B0CB-DAF726D4C924}" Directory_="publish_Dir" Attributes="0" KeyPath="NAudio.Core.dll"/>
+    <ROW Component="NAudio.Midi.dll" ComponentId="{202D6C6D-C329-4A27-A954-7A4D2C27CD7B}" Directory_="publish_Dir" Attributes="0" KeyPath="NAudio.Midi.dll"/>
+    <ROW Component="NAudio.Wasapi.dll" ComponentId="{D7086DBB-E49F-4D9B-9E7D-8B77063A6711}" Directory_="publish_Dir" Attributes="0" KeyPath="NAudio.Wasapi.dll"/>
+    <ROW Component="NAudio.WinForms.dll" ComponentId="{C2FC4A55-0A95-4D70-A1FB-B2906FEA2A42}" Directory_="publish_Dir" Attributes="0" KeyPath="NAudio.WinForms.dll"/>
+    <ROW Component="NAudio.WinMM.dll" ComponentId="{915118E7-F0E8-4FAF-B6AF-7D57126EF802}" Directory_="publish_Dir" Attributes="0" KeyPath="NAudio.WinMM.dll"/>
+    <ROW Component="NAudio.dll" ComponentId="{B969C26D-5FE0-43D3-92F5-DD8A92CB2825}" Directory_="publish_Dir" Attributes="0" KeyPath="NAudio.dll"/>
+    <ROW Component="Newtonsoft.Json.dll" ComponentId="{254DB96B-BF15-41C5-B54F-4C26D145C147}" Directory_="publish_Dir" Attributes="0" KeyPath="Newtonsoft.Json.dll"/>
+    <ROW Component="Polygent.Api.Logic.dll" ComponentId="{D8A8A411-4DDA-4F61-A8F2-4222E5AADECC}" Directory_="publish_Dir" Attributes="0" KeyPath="Polygent.Api.Logic.dll"/>
+    <ROW Component="Polygent.Api.dll" ComponentId="{94DCC754-4ECD-4B7F-BD04-2C4C64CD9F74}" Directory_="publish_Dir" Attributes="0" KeyPath="Polygent.Api.dll"/>
+    <ROW Component="Polygent.Api.exe" ComponentId="{39559B1D-6628-4D93-9BA3-48B400A0CC1A}" Directory_="publish_Dir" Attributes="256" KeyPath="Polygent.Api.exe"/>
+    <ROW Component="Polygent.dll" ComponentId="{E528B89E-6106-411C-BDF5-BB5669A26A72}" Directory_="publish_Dir" Attributes="256" KeyPath="Polygent.dll"/>
+    <ROW Component="Polygent.exe" ComponentId="{51B9BADD-A5C9-42C9-AAB3-1B3B12963C20}" Directory_="publish_Dir" Attributes="256" KeyPath="Polygent.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{31E38A93-7DF2-47B9-BA75-384A6221E6E9}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="RoeiBajayo.Infrastructure.dll" ComponentId="{1B03BBD5-1B06-45FC-8B85-E298F9AE6691}" Directory_="publish_Dir" Attributes="0" KeyPath="RoeiBajayo.Infrastructure.dll"/>
+    <ROW Component="SQLitePCLRaw.batteries_v2.dll" ComponentId="{E5665B13-493F-49E8-9D69-EE5465C2FC11}" Directory_="publish_Dir" Attributes="0" KeyPath="SQLitePCLRaw.batteries_v2.dll"/>
+    <ROW Component="SQLitePCLRaw.core.dll" ComponentId="{431073C7-589A-49AD-B3C1-8E27657E3C5B}" Directory_="publish_Dir" Attributes="0" KeyPath="SQLitePCLRaw.core.dll"/>
+    <ROW Component="SQLitePCLRaw.provider.e_sqlite3.dll" ComponentId="{B1917644-471D-4FA1-B841-18F1E0E23C48}" Directory_="publish_Dir" Attributes="0" KeyPath="SQLitePCLRaw.provider.e_sqlite3.dll"/>
+    <ROW Component="WebView2Loader.dll" ComponentId="{D0D4E4C7-004B-42C4-B6CD-17455AC317B4}" Directory_="native_17_Dir" Attributes="256" KeyPath="WebView2Loader.dll"/>
+    <ROW Component="WebView2Loader.dll_1" ComponentId="{2295E6C4-9F98-4BBA-AF2B-BA7CDCD4FED2}" Directory_="native_18_Dir" Attributes="256" KeyPath="WebView2Loader.dll_1"/>
+    <ROW Component="WebView2Loader.dll_2" ComponentId="{7C870737-2B41-4A0A-A4D5-288F9C966DC5}" Directory_="native_19_Dir" Attributes="0" KeyPath="WebView2Loader.dll_2"/>
+    <ROW Component="appsettings.json" ComponentId="{F99A27C2-2CB1-4D4A-B556-6AEB7033B709}" Directory_="publish_Dir" Attributes="0" KeyPath="appsettings.json" Type="0"/>
+    <ROW Component="e_sqlite3.a" ComponentId="{346CD1F5-E80D-40EC-906B-32FCBE880927}" Directory_="net9.0_Dir" Attributes="0" KeyPath="e_sqlite3.a" Type="0"/>
+    <ROW Component="e_sqlite3.dll" ComponentId="{74F9A44E-1471-4F20-B6FB-6A635241D55F}" Directory_="native_16_Dir" Attributes="0" KeyPath="e_sqlite3.dll"/>
+    <ROW Component="e_sqlite3.dll_1" ComponentId="{051894E4-6631-463D-BBD1-3F1357465D4A}" Directory_="native_17_Dir" Attributes="256" KeyPath="e_sqlite3.dll_1"/>
+    <ROW Component="e_sqlite3.dll_2" ComponentId="{4CC465AC-3C94-4C01-A7E2-F3E999553215}" Directory_="native_18_Dir" Attributes="256" KeyPath="e_sqlite3.dll_2"/>
+    <ROW Component="e_sqlite3.dll_3" ComponentId="{67C8CB82-EC0C-40BF-8ACC-91C4427978C0}" Directory_="native_19_Dir" Attributes="0" KeyPath="e_sqlite3.dll_3"/>
+    <ROW Component="index.html" ComponentId="{94B3330F-7F80-43FE-9475-A876BC35A39C}" Directory_="wwwroot_Dir" Attributes="0" KeyPath="index.html" Type="0"/>
+    <ROW Component="indexCBDJAHml.css" ComponentId="{D7691C6F-2308-4835-8938-290D3CFF5E95}" Directory_="assets_Dir" Attributes="0" KeyPath="indexCBDJAHml.css" Type="0"/>
+    <ROW Component="libe_sqlite3.dylib" ComponentId="{CDDB98B1-E843-4749-A527-662728636524}" Directory_="native_12_Dir" Attributes="0" KeyPath="libe_sqlite3.dylib" Type="0"/>
+    <ROW Component="libe_sqlite3.dylib_1" ComponentId="{3E3B71DB-BE92-4BA8-946C-CA2B35FFA214}" Directory_="native_13_Dir" Attributes="0" KeyPath="libe_sqlite3.dylib_1" Type="0"/>
+    <ROW Component="libe_sqlite3.dylib_2" ComponentId="{A528C613-7704-4091-85B9-C9D7975C7102}" Directory_="native_14_Dir" Attributes="0" KeyPath="libe_sqlite3.dylib_2" Type="0"/>
+    <ROW Component="libe_sqlite3.dylib_3" ComponentId="{7C2DD0A2-634E-4C5A-83D2-41FFE228D2CF}" Directory_="native_15_Dir" Attributes="0" KeyPath="libe_sqlite3.dylib_3" Type="0"/>
+    <ROW Component="libe_sqlite3.so" ComponentId="{AC592E39-EAD5-45B9-B21E-C6F578237CA0}" Directory_="native_Dir" Attributes="0" KeyPath="libe_sqlite3.so" Type="0"/>
+    <ROW Component="libe_sqlite3.so_1" ComponentId="{A3949F7C-400A-45C5-BA05-0DF9051A2C21}" Directory_="native_1_Dir" Attributes="0" KeyPath="libe_sqlite3.so_1" Type="0"/>
+    <ROW Component="libe_sqlite3.so_10" ComponentId="{8B59EB3A-53AF-4413-9F4C-80A27061E97D}" Directory_="native_10_Dir" Attributes="0" KeyPath="libe_sqlite3.so_10" Type="0"/>
+    <ROW Component="libe_sqlite3.so_11" ComponentId="{4A10FD53-A458-400E-AAC2-8BB2AFEE8E22}" Directory_="native_11_Dir" Attributes="0" KeyPath="libe_sqlite3.so_11" Type="0"/>
+    <ROW Component="libe_sqlite3.so_2" ComponentId="{F17AE779-CC7A-4EE7-B65D-10091CA4673A}" Directory_="native_2_Dir" Attributes="0" KeyPath="libe_sqlite3.so_2" Type="0"/>
+    <ROW Component="libe_sqlite3.so_3" ComponentId="{8CF6492A-E12B-40C8-B7A0-46A5E15ECEBB}" Directory_="native_3_Dir" Attributes="0" KeyPath="libe_sqlite3.so_3" Type="0"/>
+    <ROW Component="libe_sqlite3.so_4" ComponentId="{A8F0A7FE-F0C8-4DD7-A899-EB799B813BE4}" Directory_="native_4_Dir" Attributes="0" KeyPath="libe_sqlite3.so_4" Type="0"/>
+    <ROW Component="libe_sqlite3.so_5" ComponentId="{1B08F588-6674-409F-8C13-B7D3A06971A2}" Directory_="native_5_Dir" Attributes="0" KeyPath="libe_sqlite3.so_5" Type="0"/>
+    <ROW Component="libe_sqlite3.so_6" ComponentId="{0DC412E0-AC19-4730-8D6A-44A9F76F5CFF}" Directory_="native_6_Dir" Attributes="0" KeyPath="libe_sqlite3.so_6" Type="0"/>
+    <ROW Component="libe_sqlite3.so_7" ComponentId="{9A8C39C1-F858-4C37-9A9F-1143A41B32D7}" Directory_="native_7_Dir" Attributes="0" KeyPath="libe_sqlite3.so_7" Type="0"/>
+    <ROW Component="libe_sqlite3.so_8" ComponentId="{F9CF4509-0C6C-4C83-8450-9136DDF40629}" Directory_="native_8_Dir" Attributes="0" KeyPath="libe_sqlite3.so_8" Type="0"/>
+    <ROW Component="libe_sqlite3.so_9" ComponentId="{65A88477-74F5-44FF-A1C1-15B70BF17D60}" Directory_="native_9_Dir" Attributes="0" KeyPath="libe_sqlite3.so_9" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="appsettings.json" Component_="appsettings.json" FileName="APPSET~1.JSO|appsettings.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\appsettings.json" SelfReg="false"/>
+    <ROW File="CommunityToolkit.Mvvm.dll" Component_="CommunityToolkit.Mvvm.dll" FileName="COMMUN~1.DLL|CommunityToolkit.Mvvm.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\CommunityToolkit.Mvvm.dll" SelfReg="false"/>
+    <ROW File="MediatorCore.dll" Component_="MediatorCore.dll" FileName="MEDIAT~1.DLL|MediatorCore.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\MediatorCore.dll" SelfReg="false"/>
+    <ROW File="MemoryCore.dll" Component_="MemoryCore.dll" FileName="MEMORY~1.DLL|MemoryCore.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\MemoryCore.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Data.Sqlite.dll" Component_="Microsoft.Data.Sqlite.dll" FileName="MICROS~1.DLL|Microsoft.Data.Sqlite.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Data.Sqlite.dll" SelfReg="false"/>
+    <ROW File="Microsoft.EntityFrameworkCore.Abstractions.dll" Component_="Microsoft.EntityFrameworkCore.Abstractions.dll" FileName="MICROS~2.DLL|Microsoft.EntityFrameworkCore.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.EntityFrameworkCore.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.EntityFrameworkCore.dll" Component_="Microsoft.EntityFrameworkCore.dll" FileName="MICROS~3.DLL|Microsoft.EntityFrameworkCore.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.EntityFrameworkCore.dll" SelfReg="false"/>
+    <ROW File="Microsoft.EntityFrameworkCore.Relational.dll" Component_="Microsoft.EntityFrameworkCore.Relational.dll" FileName="MICROS~4.DLL|Microsoft.EntityFrameworkCore.Relational.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.EntityFrameworkCore.Relational.dll" SelfReg="false"/>
+    <ROW File="Microsoft.EntityFrameworkCore.Sqlite.dll" Component_="Microsoft.EntityFrameworkCore.Sqlite.dll" FileName="MICROS~5.DLL|Microsoft.EntityFrameworkCore.Sqlite.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.EntityFrameworkCore.Sqlite.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Caching.Abstractions.dll" Component_="Microsoft.Extensions.Caching.Abstractions.dll" FileName="MICROS~6.DLL|Microsoft.Extensions.Caching.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.Caching.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Caching.Memory.dll" Component_="Microsoft.Extensions.Caching.Memory.dll" FileName="MICROS~7.DLL|Microsoft.Extensions.Caching.Memory.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.Caching.Memory.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.Abstractions.dll" Component_="Microsoft.Extensions.Configuration.Abstractions.dll" FileName="MICROS~8.DLL|Microsoft.Extensions.Configuration.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.Configuration.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll" FileName="MICROS~9.DLL|Microsoft.Extensions.DependencyInjection.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.DependencyInjection.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.dll" Component_="Microsoft.Extensions.DependencyInj_1_ection.dll" FileName="MICRO~10.DLL|Microsoft.Extensions.DependencyInjection.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.DependencyInjection.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyModel.dll" Component_="Microsoft.Extensions.DependencyModel.dll" FileName="MICRO~11.DLL|Microsoft.Extensions.DependencyModel.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.DependencyModel.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.FileSystemGlobbing.dll" Component_="Microsoft.Extensions.FileSystemGlobbing.dll" FileName="MICRO~12.DLL|Microsoft.Extensions.FileSystemGlobbing.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.FileSystemGlobbing.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.Abstractions.dll" Component_="Microsoft.Extensions.Logging.Abstractions.dll" FileName="MICRO~13.DLL|Microsoft.Extensions.Logging.Abstractions.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.Logging.Abstractions.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.dll" Component_="Microsoft.Extensions.Logging.dll" FileName="MICRO~14.DLL|Microsoft.Extensions.Logging.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.Logging.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Options.dll" Component_="Microsoft.Extensions.Options.dll" FileName="MICRO~15.DLL|Microsoft.Extensions.Options.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.Options.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Primitives.dll" Component_="Microsoft.Extensions.Primitives.dll" FileName="MICRO~16.DLL|Microsoft.Extensions.Primitives.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Extensions.Primitives.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.dll" Component_="Microsoft.Web.WebView2.Core.dll" FileName="MICRO~17.DLL|Microsoft.Web.WebView2.Core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Web.WebView2.Core.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Core.xml" Component_="appsettings.json" FileName="MICROS~1.XML|Microsoft.Web.WebView2.Core.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Web.WebView2.Core.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.WinForms.dll" Component_="Microsoft.Web.WebView2.WinForms.dll" FileName="MICRO~18.DLL|Microsoft.Web.WebView2.WinForms.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Web.WebView2.WinForms.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.WinForms.xml" Component_="appsettings.json" FileName="MICROS~2.XML|Microsoft.Web.WebView2.WinForms.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Web.WebView2.WinForms.xml" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Wpf.dll" Component_="Microsoft.Web.WebView2.Wpf.dll" FileName="MICRO~19.DLL|Microsoft.Web.WebView2.Wpf.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Web.WebView2.Wpf.dll" SelfReg="false"/>
+    <ROW File="Microsoft.Web.WebView2.Wpf.xml" Component_="appsettings.json" FileName="MICROS~3.XML|Microsoft.Web.WebView2.Wpf.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Microsoft.Web.WebView2.Wpf.xml" SelfReg="false"/>
+    <ROW File="NAudio.Asio.dll" Component_="NAudio.Asio.dll" FileName="NAUDIO~1.DLL|NAudio.Asio.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\NAudio.Asio.dll" SelfReg="false"/>
+    <ROW File="NAudio.Core.dll" Component_="NAudio.Core.dll" FileName="NAUDIO~2.DLL|NAudio.Core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\NAudio.Core.dll" SelfReg="false"/>
+    <ROW File="NAudio.dll" Component_="NAudio.dll" FileName="NAudio.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\NAudio.dll" SelfReg="false"/>
+    <ROW File="NAudio.Midi.dll" Component_="NAudio.Midi.dll" FileName="NAUDIO~3.DLL|NAudio.Midi.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\NAudio.Midi.dll" SelfReg="false"/>
+    <ROW File="NAudio.Wasapi.dll" Component_="NAudio.Wasapi.dll" FileName="NAUDIO~4.DLL|NAudio.Wasapi.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\NAudio.Wasapi.dll" SelfReg="false"/>
+    <ROW File="NAudio.WinForms.dll" Component_="NAudio.WinForms.dll" FileName="NAUDIO~5.DLL|NAudio.WinForms.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\NAudio.WinForms.dll" SelfReg="false"/>
+    <ROW File="NAudio.WinMM.dll" Component_="NAudio.WinMM.dll" FileName="NAUDIO~6.DLL|NAudio.WinMM.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\NAudio.WinMM.dll" SelfReg="false"/>
+    <ROW File="Newtonsoft.Json.dll" Component_="Newtonsoft.Json.dll" FileName="NEWTON~1.DLL|Newtonsoft.Json.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Newtonsoft.Json.dll" SelfReg="false"/>
+    <ROW File="Polygent.Api.dll" Component_="Polygent.Api.dll" FileName="POLYGE~1.DLL|Polygent.Api.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.Api.dll" SelfReg="false"/>
+    <ROW File="Polygent.Api.exe" Component_="Polygent.Api.exe" FileName="POLYGE~1.EXE|Polygent.Api.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.Api.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="Polygent.Api.Logic.dll" Component_="Polygent.Api.Logic.dll" FileName="POLYGE~2.DLL|Polygent.Api.Logic.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.Api.Logic.dll" SelfReg="false"/>
+    <ROW File="Polygent.Api.Logic.pdb" Component_="Polygent.Api.Logic.dll" FileName="POLYGE~1.PDB|Polygent.Api.Logic.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.Api.Logic.pdb" SelfReg="false"/>
+    <ROW File="Polygent.Api.pdb" Component_="Polygent.Api.exe" FileName="POLYGE~2.PDB|Polygent.Api.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.Api.pdb" SelfReg="false"/>
+    <ROW File="Polygent.Api.runtimeconfig.json" Component_="appsettings.json" FileName="POLYGE~1.JSO|Polygent.Api.runtimeconfig.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.Api.runtimeconfig.json" SelfReg="false"/>
+    <ROW File="Polygent.deps.json" Component_="appsettings.json" FileName="POLYGE~2.JSO|Polygent.deps.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.deps.json" SelfReg="false"/>
+    <ROW File="Polygent.dll" Component_="Polygent.dll" FileName="Polygent.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.dll" SelfReg="false"/>
+    <ROW File="Polygent.exe" Component_="Polygent.exe" FileName="Polygent.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="Polygent.pdb" Component_="Polygent.exe" FileName="Polygent.pdb" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.pdb" SelfReg="false"/>
+    <ROW File="Polygent.runtimeconfig.json" Component_="appsettings.json" FileName="POLYGE~3.JSO|Polygent.runtimeconfig.json" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\Polygent.runtimeconfig.json" SelfReg="false"/>
+    <ROW File="RoeiBajayo.Infrastructure.dll" Component_="RoeiBajayo.Infrastructure.dll" FileName="ROEIBA~1.DLL|RoeiBajayo.Infrastructure.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\RoeiBajayo.Infrastructure.dll" SelfReg="false"/>
+    <ROW File="e_sqlite3.a" Component_="e_sqlite3.a" FileName="E_SQLI~1.A|e_sqlite3.a" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so" Component_="libe_sqlite3.so" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-arm\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_1" Component_="libe_sqlite3.so_1" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-arm64\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_2" Component_="libe_sqlite3.so_2" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-armel\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_3" Component_="libe_sqlite3.so_3" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-mips64\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_4" Component_="libe_sqlite3.so_4" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-musl-arm\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_5" Component_="libe_sqlite3.so_5" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-musl-arm64\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_6" Component_="libe_sqlite3.so_6" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-musl-s390x\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_7" Component_="libe_sqlite3.so_7" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-musl-x64\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_8" Component_="libe_sqlite3.so_8" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-ppc64le\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_9" Component_="libe_sqlite3.so_9" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-s390x\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_10" Component_="libe_sqlite3.so_10" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-x64\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.so_11" Component_="libe_sqlite3.so_11" FileName="LIBE_S~1.SO|libe_sqlite3.so" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\linux-x86\native\libe_sqlite3.so" SelfReg="false"/>
+    <ROW File="libe_sqlite3.dylib" Component_="libe_sqlite3.dylib" FileName="LIBE_S~1.DYL|libe_sqlite3.dylib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib" SelfReg="false"/>
+    <ROW File="libe_sqlite3.dylib_1" Component_="libe_sqlite3.dylib_1" FileName="LIBE_S~1.DYL|libe_sqlite3.dylib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib" SelfReg="false"/>
+    <ROW File="libe_sqlite3.dylib_2" Component_="libe_sqlite3.dylib_2" FileName="LIBE_S~1.DYL|libe_sqlite3.dylib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\osx-arm64\native\libe_sqlite3.dylib" SelfReg="false"/>
+    <ROW File="libe_sqlite3.dylib_3" Component_="libe_sqlite3.dylib_3" FileName="LIBE_S~1.DYL|libe_sqlite3.dylib" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\osx-x64\native\libe_sqlite3.dylib" SelfReg="false"/>
+    <ROW File="e_sqlite3.dll" Component_="e_sqlite3.dll" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\win-arm\native\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="e_sqlite3.dll_1" Component_="e_sqlite3.dll_1" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\win-arm64\native\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll" Component_="WebView2Loader.dll" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\win-arm64\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="e_sqlite3.dll_2" Component_="e_sqlite3.dll_2" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\win-x64\native\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll_1" Component_="WebView2Loader.dll_1" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\win-x64\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="e_sqlite3.dll_3" Component_="e_sqlite3.dll_3" FileName="E_SQLI~1.DLL|e_sqlite3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\win-x86\native\e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="WebView2Loader.dll_2" Component_="WebView2Loader.dll_2" FileName="WEBVIE~1.DLL|WebView2Loader.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\runtimes\win-x86\native\WebView2Loader.dll" SelfReg="false"/>
+    <ROW File="SQLitePCLRaw.batteries_v2.dll" Component_="SQLitePCLRaw.batteries_v2.dll" FileName="SQLITE~1.DLL|SQLitePCLRaw.batteries_v2.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\SQLitePCLRaw.batteries_v2.dll" SelfReg="false"/>
+    <ROW File="SQLitePCLRaw.core.dll" Component_="SQLitePCLRaw.core.dll" FileName="SQLITE~2.DLL|SQLitePCLRaw.core.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\SQLitePCLRaw.core.dll" SelfReg="false"/>
+    <ROW File="SQLitePCLRaw.provider.e_sqlite3.dll" Component_="SQLitePCLRaw.provider.e_sqlite3.dll" FileName="SQLITE~3.DLL|SQLitePCLRaw.provider.e_sqlite3.dll" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\SQLitePCLRaw.provider.e_sqlite3.dll" SelfReg="false"/>
+    <ROW File="indexCBDJAHml.css" Component_="indexCBDJAHml.css" FileName="INDEX-~1.CSS|index-CBDJAHml.css" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\wwwroot\assets\index-CBDJAHml.css" SelfReg="false"/>
+    <ROW File="indexCdxQ5RKB.js" Component_="indexCBDJAHml.css" FileName="INDEX-~1.JS|index-CdxQ5RKB.js" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\wwwroot\assets\index-CdxQ5RKB.js" SelfReg="false"/>
+    <ROW File="vendorCgS23U1.js" Component_="indexCBDJAHml.css" FileName="VENDOR~1.JS|vendor-C-gS23U1.js" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\wwwroot\assets\vendor-C-gS23U1.js" SelfReg="false"/>
+    <ROW File="index.html" Component_="index.html" FileName="INDEX~1.HTM|index.html" Version="65535.65535.65535.65535" Attributes="0" SourcePath="..\src\host-wpf\bin\Release\net9.0-windows\publish\wwwroot\index.html" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="." PackageFileName="PolygentInstaller" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="LaunchApp"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_ViewReadme" Type="1" Source="aicustact.dll" Target="ViewReadMe"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="appsettings.json"/>
+    <ROW Feature_="MainFeature" Component_="CommunityToolkit.Mvvm.dll"/>
+    <ROW Feature_="MainFeature" Component_="MediatorCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="MemoryCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Data.Sqlite.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.EntityFrameworkCore.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.EntityFrameworkCore.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.EntityFrameworkCore.Relational.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.EntityFrameworkCore.Sqlite.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Caching.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Caching.Memory.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyInj_1_ection.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.DependencyModel.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.FileSystemGlobbing.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Logging.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Options.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.WinForms.dll"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.Web.WebView2.Wpf.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Asio.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Core.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Midi.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.Wasapi.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.WinForms.dll"/>
+    <ROW Feature_="MainFeature" Component_="NAudio.WinMM.dll"/>
+    <ROW Feature_="MainFeature" Component_="Newtonsoft.Json.dll"/>
+    <ROW Feature_="MainFeature" Component_="Polygent.Api.dll"/>
+    <ROW Feature_="MainFeature" Component_="Polygent.Api.exe"/>
+    <ROW Feature_="MainFeature" Component_="Polygent.Api.Logic.dll"/>
+    <ROW Feature_="MainFeature" Component_="Polygent.dll"/>
+    <ROW Feature_="MainFeature" Component_="Polygent.exe"/>
+    <ROW Feature_="MainFeature" Component_="RoeiBajayo.Infrastructure.dll"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.a"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_1"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_2"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_3"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_4"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_5"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_6"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_7"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_8"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_9"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_10"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.so_11"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.dylib"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.dylib_1"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.dylib_2"/>
+    <ROW Feature_="MainFeature" Component_="libe_sqlite3.dylib_3"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="WebView2Loader.dll"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="WebView2Loader.dll_1"/>
+    <ROW Feature_="MainFeature" Component_="e_sqlite3.dll_3"/>
+    <ROW Feature_="MainFeature" Component_="WebView2Loader.dll_2"/>
+    <ROW Feature_="MainFeature" Component_="SQLitePCLRaw.batteries_v2.dll"/>
+    <ROW Feature_="MainFeature" Component_="SQLitePCLRaw.core.dll"/>
+    <ROW Feature_="MainFeature" Component_="SQLitePCLRaw.provider.e_sqlite3.dll"/>
+    <ROW Feature_="MainFeature" Component_="indexCBDJAHml.css"/>
+    <ROW Feature_="MainFeature" Component_="index.html"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="icon.exe" SourcePath="..\assets\icon.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="Polygent" Directory_="DesktopFolder" Name="Polygent" Component_="Polygent.exe" Target="[#Polygent.exe]" Hotkey="0" Icon_="icon.exe" IconIndex="0" ShowCmd="3" WkDir="publish_Dir"/>
+    <ROW Shortcut="Polygent_1" Directory_="StartMenuFolder" Name="Polygent" Component_="Polygent.exe" Target="[#Polygent.exe]" Hotkey="0" Icon_="icon.exe" IconIndex="0" ShowCmd="3" WkDir="publish_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>

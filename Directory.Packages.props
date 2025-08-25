@@ -1,0 +1,42 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Microsoft Extensions -->
+    <PackageVersion Include="MediatorCore" Version="1.7.8" />
+    <PackageVersion Include="MemoryCore" Version="1.6.3" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Binder" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.Json" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.FileSystemGlobbing" Version="9.0.8" />
+    <PackageVersion Include="Microsoft.Extensions.Logging" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.7" />
+    <!-- ASP.NET Core -->
+    <PackageVersion Include="Microsoft.AspNetCore.SignalR.Client" Version="9.0.0" />
+    <PackageVersion Include="Microsoft.AspNetCore.SignalR.Core" Version="1.1.0" />
+    <!-- Entity Framework Core -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7" />
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />
+    <!-- Testing -->
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageVersion Include="Moq" Version="4.20.72" />
+    <PackageVersion Include="xunit" Version="2.9.3" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="3.1.3" />
+    <!-- Other -->
+    <PackageVersion Include="CsvHelper" Version="33.1.0" />
+    <PackageVersion Include="RoeiBajayo.Infrastructure" Version="1.0.1" />
+    <PackageVersion Include="System.Text.Json" Version="9.0.7" />
+    <!-- Avalonia -->
+    <PackageVersion Include="Avalonia" Version="11.3.4" />
+    <PackageVersion Include="Avalonia.Desktop" Version="11.3.4" />
+    <PackageVersion Include="Avalonia.Themes.Fluent" Version="11.3.4" />
+    <PackageVersion Include="WebViewControl-Avalonia" Version="3.120.10" />
+    <PackageVersion Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+    <!-- WPF WebView2 -->
+    <PackageVersion Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
+  </ItemGroup>
+</Project>

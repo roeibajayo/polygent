@@ -1,0 +1,68 @@
+/* Dark mode utilities for entity pages */
+.page-container {
+  @apply flex flex-col h-full bg-neutral-50 dark:bg-neutral-900;
+}
+
+.page-header {
+  @apply p-6 border-b border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-800;
+}
+
+.page-title {
+  @apply text-2xl font-semibold text-neutral-900 dark:text-neutral-100;
+}
+
+.page-content {
+  @apply flex-1 overflow-auto p-6;
+}
+
+.empty-state {
+  @apply text-center py-12;
+}
+
+.empty-text {
+  @apply text-neutral-500 dark:text-neutral-400 mb-4;
+}
+
+.card {
+  @apply bg-white dark:bg-neutral-800 rounded-lg border border-neutral-200 dark:border-neutral-700 p-6;
+}
+
+.card-title {
+  @apply text-lg text-neutral-900 dark:text-neutral-100;
+}
+
+.card-text {
+  @apply text-neutral-600 dark:text-neutral-300;
+}
+
+.modal {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50;
+}
+
+.modal-content {
+  @apply bg-white dark:bg-neutral-800 rounded-lg p-6;
+}
+
+.modal-title {
+  @apply text-xl font-semibold text-neutral-900 dark:text-neutral-100 mb-4;
+}
+
+.form-label {
+  @apply block text-sm text-neutral-700 dark:text-neutral-300 mb-1;
+}
+
+.form-input {
+  @apply w-full px-3 py-2 border border-neutral-300 dark:border-neutral-600 rounded-md bg-white dark:bg-neutral-700 text-neutral-900 dark:text-neutral-100;
+}
+
+.tag {
+  @apply px-2 py-1 bg-neutral-100 dark:bg-neutral-700 text-neutral-700 dark:text-neutral-300 text-xs rounded;
+}
+
+.status-indicator {
+  @apply w-2 h-2 rounded-full;
+}
+
+.code-block {
+  @apply p-3 bg-neutral-50 dark:bg-neutral-700 rounded-md text-sm text-neutral-800 dark:text-neutral-200 overflow-x-auto;
+}

@@ -1,0 +1,1 @@
+export { workspacePreferences } from './workspacePreferences';
