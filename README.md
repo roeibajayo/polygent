@@ -41,7 +41,7 @@ Before installing Polygent, ensure you have:
 
 - **[.NET 9 Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.8-windows-x64-installer)**
 - **[Git](https://git-scm.com/downloads/win)**
-- **[Claude Code](https://www.anthropic.com/claude-code)
+- **[Claude Code](https://www.anthropic.com/claude-code)**
 
 ### Windows Installer (Recommended)
 
