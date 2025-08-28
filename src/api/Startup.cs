@@ -1,4 +1,4 @@
-namespace Polygent;
+namespace Polygent.Api;
 
 public static class Startup
 {

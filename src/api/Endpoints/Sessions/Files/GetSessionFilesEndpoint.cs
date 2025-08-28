@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Sessions.Files;
+namespace Polygent.Api.Endpoints.Sessions.Files;
 
 internal sealed class GetSessionFilesEndpoint : IGetEndpoint
 {

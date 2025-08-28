@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Helpers;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Sessions.Files;
+namespace Polygent.Api.Endpoints.Sessions.Files;
 
 internal sealed class OpenFileWithEditorEndpoint : IPostEndpoint
 {

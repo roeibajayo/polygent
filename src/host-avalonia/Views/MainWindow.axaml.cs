@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using WebViewControl;
 using System.Runtime.InteropServices;
+using Polygent.Api;
 
 namespace WebHost;
 
@@ -83,7 +84,7 @@ public partial class MainWindow : Window
             await Dispatcher.UIThread.InvokeAsync(() => UpdateLoadingText("Starting Polygent..."));
 
             // Build the web application
-            _webApp = Polygent.Startup.Build();
+            _webApp = Startup.Build();
 
             // Start the server asynchronously
             _ = Task.Run(async () =>

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Sessions.Tasks;
+namespace Polygent.Api.Endpoints.Sessions.Tasks;
 
 internal sealed class GetSessionTasksEndpoint : IGetEndpoint
 {

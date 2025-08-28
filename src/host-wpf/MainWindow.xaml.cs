@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Web.WebView2.Core;
+using Polygent.Api;
 using Polygent.Logic.Services;
 using System;
 using System.IO;
@@ -47,7 +48,7 @@ public partial class MainWindow : Window
             await Dispatcher.InvokeAsync(() => UpdateLoadingText("Starting Polygent..."));
 
             // Build the web application
-            _webApp = Polygent.Startup.Build();
+            _webApp = Startup.Build();
 
             // Start the server asynchronously
             _ = Task.Run(async () =>

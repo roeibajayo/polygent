@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Agents;
+namespace Polygent.Api.Endpoints.Agents;
 
 internal sealed class UpdateAgentEndpoint : IPutEndpoint
 {

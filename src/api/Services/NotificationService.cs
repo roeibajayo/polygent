@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.SignalR;
-using Polygent.Dtos;
-using Polygent.Hubs;
+using Polygent.Api.Dtos;
+using Polygent.Api.Hubs;
 using Polygent.Logic.Interfaces;
 using RoeiBajayo.Infrastructure.DependencyInjection.Interfaces;
 
-namespace Polygent.Services;
+namespace Polygent.Api.Services;
 
 public class NotificationService(IHubContext<PolygentHub> hubContext) 
     : INotificationService, IScopedService<INotificationService>

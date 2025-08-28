@@ -1,10 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
-using Polygent.Services;
 
-namespace Polygent.Endpoints.Sessions;
+namespace Polygent.Api.Endpoints.Sessions;
 
 internal sealed class UpdateSessionEndpoint : IPutEndpoint
 {

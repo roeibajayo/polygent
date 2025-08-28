@@ -1,6 +1,6 @@
 using Polygent.Logic.Models;
 
-namespace Polygent.Dtos;
+namespace Polygent.Api.Dtos;
 
 public sealed record MCPDto(
     int Id,

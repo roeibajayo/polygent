@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Polygent.Dtos;
+namespace Polygent.Api.Dtos;
 
 public sealed record WorkspaceDto(
     int Id,

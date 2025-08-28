@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Tasks;
+namespace Polygent.Api.Endpoints.Tasks;
 
 internal sealed class GetWorkspaceTasksEndpoint : IGetEndpoint
 {

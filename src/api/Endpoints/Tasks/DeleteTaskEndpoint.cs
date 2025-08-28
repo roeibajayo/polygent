@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Tasks;
+namespace Polygent.Api.Endpoints.Tasks;
 
 internal sealed class DeleteTaskEndpoint : IDeleteEndpoint
 {

@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 using System.Runtime.InteropServices;
 
-namespace Polygent.Endpoints.Sessions.Files;
+namespace Polygent.Api.Endpoints.Sessions.Files;
 
 internal sealed class OpenFolderWithEditorEndpoint : IPostEndpoint
 {

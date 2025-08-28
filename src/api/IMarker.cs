@@ -1,3 +1,3 @@
-﻿namespace Polygent;
+﻿namespace Polygent.Api;
 
 public interface IMarker;

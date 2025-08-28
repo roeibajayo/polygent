@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Sessions.Actions;
+namespace Polygent.Api.Endpoints.Sessions.Actions;
 
 internal sealed class ResetSessionEndpoint : IPostEndpoint
 {

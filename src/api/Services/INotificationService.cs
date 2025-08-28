@@ -1,7 +1,7 @@
-using Polygent.Dtos;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Services;
+namespace Polygent.Api.Services;
 
 public interface INotificationService
 {

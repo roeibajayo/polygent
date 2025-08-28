@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygent.Api", "src\api\Polygent.Api.csproj", "{166B1494-1B8A-4625-933B-3C96B09F7C8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygent.Api.Logic", "src\api-logic\Polygent.Api.Logic.csproj", "{0C2192E5-D81E-4D2E-AD46-B6919B1B3824}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygent.Logic", "src\api-logic\Polygent.Logic.csproj", "{0C2192E5-D81E-4D2E-AD46-B6919B1B3824}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polygent.Host.Avalonia", "src\host-avalonia\Polygent.Host.Avalonia.csproj", "{88ED2183-CB0E-4C62-8E78-E435E6EBD143}"
 EndProject

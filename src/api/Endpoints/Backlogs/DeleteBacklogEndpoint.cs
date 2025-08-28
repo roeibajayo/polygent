@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Backlogs;
+namespace Polygent.Api.Endpoints.Backlogs;
 
 internal sealed class DeleteBacklogEndpoint : IDeleteEndpoint
 {

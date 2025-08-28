@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Sessions.Git;
+namespace Polygent.Api.Endpoints.Sessions.Git;
 
 internal sealed class GetSessionGitFileContentEndpoint : IGetEndpoint
 {

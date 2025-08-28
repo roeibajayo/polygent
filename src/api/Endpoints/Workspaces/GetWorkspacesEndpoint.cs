@@ -1,8 +1,8 @@
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Workspaces;
+namespace Polygent.Api.Endpoints.Workspaces;
 
 internal sealed class GetWorkspacesEndpoint : IGetEndpoint
 {

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.SignalR;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Hubs;
+namespace Polygent.Api.Hubs;
 
 public class PolygentHub(
     ISessionPresenceService sessionPresenceService)

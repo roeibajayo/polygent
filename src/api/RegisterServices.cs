@@ -4,7 +4,7 @@ using Polygent.Logic.Context;
 using Polygent.Logic.Services;
 using RoeiBajayo.Infrastructure;
 
-namespace Polygent;
+namespace Polygent.Api;
 
 public static class RegisterServices
 {
@@ -16,7 +16,7 @@ public static class RegisterServices
 
         var dbPath = Path.Combine(StorageService.StoragePath, "polygent.db");
         services.AddDbContext<PolygentContext>(options =>
-            options.UseSqlite("Data Source=" + dbPath, b => b.MigrationsAssembly("Polygent")));
+            options.UseSqlite("Data Source=" + dbPath, b => b.MigrationsAssembly("Polygent.Api")));
 
         services.AddHttpContextAccessor();
         services.AddSignalR();

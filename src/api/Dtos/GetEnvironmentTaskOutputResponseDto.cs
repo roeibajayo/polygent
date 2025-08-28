@@ -1,4 +1,4 @@
-namespace Polygent.Dtos;
+namespace Polygent.Api.Dtos;
 
 public sealed record GetEnvironmentTaskOutputResponseDto(
     Guid TaskExecutionId,

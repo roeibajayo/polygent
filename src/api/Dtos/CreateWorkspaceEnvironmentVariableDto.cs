@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Polygent.Dtos;
+namespace Polygent.Api.Dtos;
 
 public sealed record CreateWorkspaceEnvironmentVariableDto(
     [Required, MaxLength(255)] string Key,

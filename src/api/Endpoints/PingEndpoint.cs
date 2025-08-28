@@ -1,6 +1,6 @@
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 
-namespace Polygent.Endpoints;
+namespace Polygent.Api.Endpoints;
 
 internal sealed class PingEndpoint : IGetEndpoint
 {

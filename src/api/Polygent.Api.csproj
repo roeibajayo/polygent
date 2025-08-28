@@ -27,7 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\api-logic\Polygent.Api.Logic.csproj" />
+    <ProjectReference Include="..\api-logic\Polygent.Logic.csproj" />
   </ItemGroup>
 
   <ItemGroup>

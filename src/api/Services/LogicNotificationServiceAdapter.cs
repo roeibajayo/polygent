@@ -1,8 +1,8 @@
-using Polygent.Dtos;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 using RoeiBajayo.Infrastructure.DependencyInjection.Interfaces;
 
-namespace Polygent.Services;
+namespace Polygent.Api.Services;
 
 internal sealed class LogicNotificationServiceAdapter(INotificationService notificationService)
     : Logic.Interfaces.INotificationService, IScopedService<Logic.Interfaces.INotificationService>

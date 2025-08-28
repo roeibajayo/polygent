@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Sessions;
+namespace Polygent.Api.Endpoints.Sessions;
 
 internal sealed class DeleteSessionEndpoint : IDeleteEndpoint
 {

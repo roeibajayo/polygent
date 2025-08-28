@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Agents;
+namespace Polygent.Api.Endpoints.Agents;
 
 internal sealed class DeleteAgentEndpoint : IDeleteEndpoint
 {

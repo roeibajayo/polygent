@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.MCPs;
+namespace Polygent.Api.Endpoints.MCPs;
 
 internal sealed class DeleteMCPEndpoint : IDeleteEndpoint
 {

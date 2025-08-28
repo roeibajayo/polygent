@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
+using Polygent.Api.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Environments;
+namespace Polygent.Api.Endpoints.Environments;
 
 internal sealed class CreateEnvironmentEndpoint : IPostEndpoint
 {

@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Polygent.EndpointsInfrastructure;
-using Polygent.Hubs;
+using Polygent.Api.EndpointsInfrastructure;
+using Polygent.Api.Hubs;
 using Polygent.Logic.Context;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent;
+namespace Polygent.Api;
 
 public static class HostExtensions
 {

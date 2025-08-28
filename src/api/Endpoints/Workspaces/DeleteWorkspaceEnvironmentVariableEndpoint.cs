@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.EndpointsInfrastructure;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints.Workspaces;
+namespace Polygent.Api.Endpoints.Workspaces;
 
 internal sealed class DeleteWorkspaceEnvironmentVariableEndpoint : IDeleteEndpoint
 {

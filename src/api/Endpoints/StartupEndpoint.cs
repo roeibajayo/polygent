@@ -1,8 +1,9 @@
-using Polygent.Dtos;
-using Polygent.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
+using Polygent.Api.EndpointsInfrastructure;
+using Polygent.Api.Dtos;
 using Polygent.Logic.Interfaces;
 
-namespace Polygent.Endpoints;
+namespace Polygent.Api.Endpoints;
 
 internal sealed class StartupEndpoint : IGetEndpoint
 {

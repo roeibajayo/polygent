@@ -1,4 +1,4 @@
-namespace Polygent.EndpointsInfrastructure;
+namespace Polygent.Api.EndpointsInfrastructure;
 
 public interface IEndpoint
 {
