@@ -1,7 +1,7 @@
-import { Badge, Button } from '@/components';
+import { Badge, Button, ConfirmDialog } from '@/components';
 import { Workspace } from '@/types';
 import { Edit3, Trash2, FolderGit2 } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 interface WorkspaceCardProps {
   workspace: Workspace;
@@ -14,11 +14,25 @@ export default function WorkspaceCard({
   onEdit,
   onDelete
 }: WorkspaceCardProps) {
-  const navigate = useNavigate();
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
 
-  const handleButtonClick = (e: React.MouseEvent, _action: () => void) => {
+  const handleEdit = (e: React.MouseEvent) => {
     e.stopPropagation();
-    navigate(`/workspace/${workspace.id}`);
+    onEdit(workspace);
+  };
+
+  const handleDelete = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    setShowDeleteConfirm(true);
+  };
+
+  const confirmDelete = () => {
+    onDelete(workspace.id);
+    setShowDeleteConfirm(false);
+  };
+
+  const cancelDelete = () => {
+    setShowDeleteConfirm(false);
   };
 
   return (
@@ -35,16 +49,10 @@ export default function WorkspaceCard({
           </div>
         </div>
         <div className="flex items-center gap-1">
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={(e) => handleButtonClick(e, () => onEdit(workspace))}>
+          <Button variant="ghost" size="sm" onClick={handleEdit}>
             <Edit3 className="w-4 h-4" />
           </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={(e) => handleButtonClick(e, () => onDelete(workspace.id))}>
+          <Button variant="ghost" size="sm" onClick={handleDelete}>
             <Trash2 className="w-4 h-4" />
           </Button>
         </div>
@@ -53,6 +61,17 @@ export default function WorkspaceCard({
       <div className="space-y-4">
         <Badge className="font-mono">{workspace.gitRepository}</Badge>
       </div>
+
+      <ConfirmDialog
+        isOpen={showDeleteConfirm}
+        title="Delete Workspace"
+        message={`Are you sure you want to delete "${workspace.name}"? This action cannot be undone.`}
+        confirmText="Delete"
+        cancelText="Cancel"
+        variant="danger"
+        onConfirm={confirmDelete}
+        onCancel={cancelDelete}
+      />
     </div>
   );
 }
